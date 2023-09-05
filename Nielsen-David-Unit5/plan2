@@ -1,0 +1,89 @@
+Software Development Plan
+
+Class Blobber
+
+
+__init__(self, name, color, radius, height)
+    - initialize one blobber object
+    - save name first letter upper case all else lower case
+    - saves inputs (name, color, radius, height) as private variables
+    - starts timer
+
+vitalsOk (self)
+    - compare current time to base time
+    - calculated size based on difference of start time and current time
+    - if size is less that 90% or greater than 110% blobber return
+
+getName
+    returns blobber name
+
+setName
+    sets new name, ensures everything is spell right (uppercase, lowercase)
+
+getColor
+    returns color
+
+setColor
+    sets new color to lower case
+
+feedBlobber
+    adds to current radius of blobber
+
+
+----------------------------------
+Testing
+----------------------------------
+Enter your Blobber's name: David
+Enter your Blobber's color: Brown
+Enter your Blobber's radius: 500
+Enter your Blobber's height: 50
+
+Main Menu
+	(1) Display Name
+	(2) Change Name
+	(3) Display Color
+	(4) Change Color
+	(5) Feed Blobber
+	(6) Blobber Speak
+	(7) Exit
+Your Blobber is at 100.00% happiness
+Make a selection: 1
+
+Your Blobber's name is David
+
+Your Blobber is at 99.32% happiness
+Make a selection: 2
+
+Enter Blobber's new name: dave
+Your Blobber's name is Dave
+
+Your Blobber is at 97.89% happiness
+Make a selection: 3
+
+Your Blobber's color is brown
+
+Your Blobber is at 97.24% happiness
+Make a selection: 4
+
+Enter Blobber's new color: red
+Your Blobber's color is red
+
+
+Your Blobber is at 95.06% happiness
+Make a selection: 5
+Enter amount to you feed your Blobber: 25
+
+Your Blobber is at 102.92% happiness
+Make a selection: 6
+
+My name is Dave and I am red
+my current happiness is 101.87%
+
+Your Blobber is at 101.87% happiness
+Make a selection: 5
+Your Blobber is at 396.31% happiness
+Your Blobber turned to dust
+Thanks for taking care of a Blobber
+------------------------------------
+
+Seems to work good

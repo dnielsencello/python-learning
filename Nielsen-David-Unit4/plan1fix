@@ -1,0 +1,14 @@
+
+
+I fixed the error by account for the space there needs to be
+on the bottom row and centering my text so it stacks like a
+pyramid instead of a staircase
+
+I fixed this by counting the length of the bottom row using
+a for loop to create only the bottom string and then calculated
+the length of the bottom string.
+
+each concatenation of a row to the program was centered at that length.
+
+Another problem that I found is that my for loop counts from 0 to the number
+of rows +1 adding an unnecessary blank row in the code.

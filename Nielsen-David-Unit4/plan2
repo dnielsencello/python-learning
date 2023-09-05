@@ -1,0 +1,39 @@
+Software Development Plan 2
+
+task2.py
+
+1 Import
+from chessboard import drawChesssBoard
+
+2 Inputs from user
+height
+width
+starting positions
+
+3 Don't change anything else
+----------------------------------------------------------------
+chessboard.py
+
+1 drawChessboard
+    takes parameters: startX, startY, width, height
+    width and height default parameters set to 250
+    draws the outline of the chessboard
+    calls drawAllRectangles function
+
+2 drawAllRectangles
+    variables
+        width2 is the width of the chessboard divided by 8
+        height2 is the height of the chessboard divided by 8
+        startY2 = position for each small rectangle in the loop
+        startX2 = position for each small rectangle in the loop
+
+    for loop is used to determine the position of each rectangle in the first set
+        calls drawRectangle with parameters (startX2, startY2, width2, height2)
+    for loop is called again to determine positions for second set of rectangles
+         calls drawRectangle with parameters (startX2, startY2, width2, height2)
+
+3 drawRectangle
+    draws rectangles
+
+
+

@@ -1,0 +1,91 @@
+This file includes the software development plans for each task
+
+TASK 1
+The goal is to calculate the future value of an investment
+
+USER INPUT SECTION
+User indicates the following
+   - investment amount
+   - no. of years
+   - monthly interest rate
+   - monthly payment
+
+CALCULATIONS
+    Monthly calculation
+    futureValue = round(investmentAmount*((1+monthlyInterestRate)**numOfMonths) + (paymentAmount*(((1+monthlyInterestRate)**numOfMonths)-1)/(monthlyInterestRate))*(1+monthlyInterestRate),2)
+
+PRINT STATEMENT
+----------------------------------------------------------------------
+
+TASK 2
+The goal is to draw a target
+
+General code structure for a circle with fill
+
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.circle(int)
+    turtle.end_fill()
+
+1 Draw outermost circle
+2 Draw 2nd largest circle
+3 Draw 3rd largest circle
+4 Draw center circle
+
+-----------------------------------------------------------------------
+
+Task 3
+Calculating the area of a regular polygon
+
+Include Math import statement and pi import statement
+
+
+USER INPUT
+User indicates:
+    - number of sides = n
+    - length of sides =  s
+
+CALCULATION
+    - area
+
+PRINT STATEMENT
+
+----------------------------------------------------------------------
+
+Task 4
+
+Displaying employee payment information
+
+USER INPUTS THE FOLLOWING INFORMATION:
+    - Employee Name
+    - Number of hours worked in a week
+    - Hourly Pay
+    - Federal Withholding Tax
+    - State Withholding Tax
+
+CACULATIONS
+    totalPay = hoursWorked*hourlyPay
+    fedWithholding = totalPay*fedWithhold*100
+    stateWithholding = totalPay*stateWithhold*100
+    totalDeduction = stateWithholding+fedWithholding
+    netPay = totalPay - totalDeduction
+
+
+CONSOLE OUTPUT
+
+Most common concatenation statement to properly center the words
+    Out += format("Pay Rate: $", ">30")
+    Out += format(hourlyPay, ">10.2f")
+    Out += "\n"
+    Out += "\n"
+
+Modified statements
+    Out = format(Out, "^40")
+
+    Out += format("Hours Worked:  ", ">30")
+    Out += format(hoursWorked, ">10")
+
+PRINT STATMENT

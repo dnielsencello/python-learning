@@ -1,0 +1,59 @@
+# David Nielsen
+# CS1400 - I01
+# Unit 7 Plan
+
+----------------------------------------
+Class MemoryCard UML
+----------------------------------------
+
+__init__
+    id number
+    produce card value = chr(33 + idNumber//2)
+    sets card as not flipped
+
+getValue
+    returns card id number
+
+toggleFlipped
+    flip card
+
+display card
+    shows cards
+    if card is face down it shows nothing
+    if card is face up it show the card value
+
+isFlipped
+    checks if card is face up or face down
+
+__repr__
+    returns card value
+
+--------------------------------------------
+Class MemoryBoard UML
+--------------------------------------------
+
+__init__
+    two parameters, columns, rows
+    create a list of cards based on number of columns*rows
+    shuffle the list
+    create a 2-dimensional list board
+
+getBoard
+    creates a board string
+    create the first row showing the column
+    prints each row of the board
+    row index for each iteration of the loop
+    add -------- between each row
+
+flipCard
+    takes x and y position of card on board
+    flips card by calling MemoryCard.toggleflipped
+
+isCardFlipped
+    takes x and y position of card on board
+    check to see is card is flipped by calling MemoryCard.isFlipped
+
+isMatch
+    takes two card positions as a parameter
+    determines if the card values are equal
+

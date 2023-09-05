@@ -1,0 +1,24 @@
+requirements
+    Get input from user for number of sides and length each side of a regular polygon. Output the area of the polygon.
+    Must use the following modules: tan(), math.pow(), pi. Output should be rounded to 5 decimal places using round()
+
+System Analysis
+
+area = (numsides*math.pow(sidelength,2))/(4*math.tan(math.pi/numsides))
+area = round(area, 5)
+
+System Design
+    Import math modules.
+    Prompt user for number of polygon sides
+    Prompt user for side length
+    Display Result of area calculation
+Implementation - coding
+
+Testing
+
+C:\Users\DAVID\AppData\Local\Programs\Python\Python38-32\python.exe "C:/Users/DAVID/Documents/USU/CS 1400/Nielsen-David-Unit2/Task3.py"
+How many sides does the polygon have?: 8
+What is the length of each side of the polygon? 5
+The area of the polygon is:  120.71068
+
+Process finished with exit code 0

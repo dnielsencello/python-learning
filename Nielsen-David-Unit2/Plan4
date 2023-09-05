@@ -1,0 +1,43 @@
+Requirements
+    Allow user to input Employee Name, Hours Worked, Pay, and Federal and State income tax.
+    Use a concatination of the data display as if it was a pay stub, includes total pay, hours worked, hourly rate, and tax deductions
+
+System Analysis
+
+Totalpay = HoursWorked*HourlyPay
+FedWithholding = Totalpay*FedWithhold
+StaWithholding = Totalpay*StaWithhold
+TotalDed= StaWithholding+FedWithholding
+NetPay= Totalpay-TotalDed
+
+System Design
+    Prompt user to input employee name, number of hours worked, pay rate,
+    federal tax , state tax, and save all as values as variables.
+    Calculate values for Federal withholding, state withholding, total deduction, and net pay.
+    Print msg using one print statement.
+
+Implementation - coding
+
+Testing
+
+C:\Users\DAVID\AppData\Local\Programs\Python\Python38-32\python.exe "C:/Users/DAVID/Documents/USU/CS 1400/Nielsen-David-Unit2/Task4.py"
+Enter employee's name: David Nielsen
+Enter number of hours worked in a week:40
+Enter hourly pay rate:12.4
+Enter federal tax withholding rate (ex. 0.12):0.12
+Enter state tax withholding rate (ex. 0.06):0.06
+   DAVID NIELSEN EMPLOYEE INFORMATION
+
+                         Pay
+                         Hours Worked:       40.00
+                             Pay Rate: $     12.40
+                            Gross Pay: $    496.00
+
+                         Deductions
+Federal Withholding (    12.00%)     : $     59.52
+  State Withholding (      6.00%)    : $     29.76
+                      Total Deduction: $     89.28
+
+                              Net Pay: $    406.72
+
+Process finished with exit code 0

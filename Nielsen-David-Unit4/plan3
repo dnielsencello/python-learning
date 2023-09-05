@@ -1,0 +1,109 @@
+Software Developement Plan 3
+
+task3.py
+    need to import pattern.py to access functions
+
+1.main function
+    Setup the screen to the proper size
+    2. Implement a while loop that allows program to conitue
+        while loop presents menu to user asking which mode they want to play
+
+        2a. if user chooses option 1 then a rectangle pattern is initiated
+        the user inputs number value for xy postions, offset, hieght
+        width, rotation, and count.
+
+        pattern.drawRectanglePattern is called with the user defined parameters
+
+        2b. if user chooses option 2 then a circle pattern is initiated the user
+        inputs xy positions, offset, radius, and count
+
+        pattern.drawCirclePatter is called with the user defined parameters
+
+        2c. if the user chooses option 3 a super pattern is initiated. The user
+        can input the number of patterns to draw or the number is assigned randomly
+
+        pattern.drawSuperPattern is called.
+
+    After the pattern is done being made the user is prompted whether or not they
+    will continue, keeping of clearing the drawings, or exiting
+    ---------------------------------------------------------
+        if response == 1:
+            continue
+        if response == 2:
+            pattern.reset()
+        if response == 3:
+            playAgain = False
+    -----------------------------------------------------------
+
+##################################################################
+
+pattern.py
+
+1 Imported modules
+math
+from random randint
+turtle
+
+2 reset function
+erase all patterns
+call setup function
+
+3 setup
+sets turtle to speed 1000
+adjust screensize
+
+4 draw rectangle pattern
+for loop sets parameters for draw rectangle function
+newX, newY = location of the corner of each rectangle is determined by the number of
+        rectangles in a circle
+angle is used as the input for turtle.setheading it adjusts the rotation of each rectangle
+drawRectangle is called to draw each rectangle in the loop
+
+5 draw rectangle
+setRandomColor function is called for each iteration of the loop
+the rectangle is drawn using turtle
+
+6 draw circle pattern
+uses a for loop to draw all the circles in the pattern
+sets a random color for each circle drawn in the pattern
+
+7 draw super pattern
+takes user input num to determine the number of patterns that will be drawn
+choose randomly between a rectangle or circle pattern
+sets parameters for either the draw rectangle pattern or draw circle pattern functions.
+
+8 setRandomColor
+sets turtle color randomly between red, purple, blue, green, or orange
+
+9 done
+calls turtle.done() function
+
+
+
+
+pattern.py - You must define the following functions
+ reset() - Erase all of the patterns and start over
+ setup()
+Configure turtle to draw quickly
+Configure turtle to have a window of 1000 x 800
+ drawRectanglePattern()
+Use appropriate parameters
+See additional information below
+It should call drawRectangle()
+drawRectangle()
+Use appropriate parameters
+Should draw a SINGLE rectangle
+drawCirclePattern()
+Use appropriate parameters
+See additional information below
+drawSuperPattern()
+Use appropriate parameters
+Randomly draw Rectangle and Circle patterns. Each pattern should based on random values.
+Use reasonable random values (some can be negative) so patterns are drawn on the screen
+setRandomColor()
+Do not use any parameters
+Set turtle to draw in a random color
+Use at least 4 colors
+done()
+Called when user quits
+Keeps the turtle window open

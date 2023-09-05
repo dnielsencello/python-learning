@@ -1,0 +1,45 @@
+Plan for task 2
+The social situation analyzer system
+
+
+INPUT FOR PERSON 1
+1. ask for name
+2. ask for position
+3. ask for personal space radius
+
+INPUT FOR PERSON 2
+1. ask for name
+2. ask for position
+3. ask for personal space radius
+
+CALCULATIONS
+1. Calculate the distance between people
+    distance = ((x1 - x2)**2 + (y1 - y2)**2)**0.5
+2. Based on output append to message.
+
+d < r1 and d < r2
+	- in each others space
+
+	if r2 + d < r1:
+		- two completely in one's space
+	elif r1 + d < r2:
+		- one completely in two's space
+	else:
+		- overlapping
+
+d < r1 and d > r2 and
+
+	if r2 + d < r1:
+		- two completely in one's space
+	elif r1 + d < r2:
+		- one completely in two's space
+	else:
+		- overlapping
+
+d > r1 and d > r2 and d > r1 + r2
+	- not in each others space
+	- spaces not overlapping
+d > r1 and d > r2 and d < r1 + r2
+	- not in each others space
+	- spaces overlapping
+

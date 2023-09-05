@@ -1,0 +1,16 @@
+Task 1 Software Development Plan
+
+RANDOM STATEMENT
+1. import random
+2. set a random number to be guessed
+
+USER INPUT
+1. user will input a integer number to guess.
+
+IF, ELIF, ELSE logic
+1. Start with if the user guesses exaclty
+   and work from either side of that value
+   that way msg will only ever be set to
+   one string value. Assign proper responses.
+
+PRINT STATEMENT

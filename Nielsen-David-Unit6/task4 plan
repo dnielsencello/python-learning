@@ -1,0 +1,56 @@
+Task 4 Plan
+
+
+Private Methods
+__getHeadRadius()
+    takes self/orbian object as a parameter
+    return radius of orbian head
+
+__getBodyRadius()
+    takes self/orbian object as a parameter
+    return height of orbian
+
+__getBodyHeight()
+    takes self/orbian object as a parameter
+    return height of orbian
+
+Public Methods
+getAge()
+    takes orbian as an object
+    checks if the orbian is an adult
+    if the orbian is an adult, the orbian baby grows
+    return the age of the orbian "(time - birthtime)/5"
+getName()
+    return name of orbian
+
+getVolume()
+    takes orbian as an object
+    returns the volume of the orbian head + body
+
+Dunder Methods
+__add__()
+    takes two orbian objects
+    create a list with of the letters in both names
+    shuffle list
+    append the first letter in the list uppercase
+    append all other letters in the list lowercase
+    calculate the height of the baby as 12.5% of the sum of the parents
+    25% for the body radius
+    25% for the head radius
+
+__eq__()
+    takes two orbian objects
+    determines if volume of orbians are equivalent
+    returns True or False
+__gt__()
+    takes two orbian objects
+    determines if volume of the first orbian is greater than the second orbian
+    returns True or False
+
+__len__()
+    takes one orbian as an object
+    returns the height plus 2* the radius of the orbian
+
+__str__()
+    takes one orbian as an object
+    executes if print statement is used on an orbian object

@@ -1,0 +1,120 @@
+Software Development Plan
+
+Class Bobinator:
+
+init (self, name, age)
+    - initiates a Bobinator object
+    - saves a private object name
+    - saves a private object Age
+
+getAge (self)
+    - requires only one bobinator object
+    - returns age of object
+
+getName (self)
+    - requires only one bobinator object
+    - returns name of the object
+
+min (self, other)
+    - requires both bobinator objects
+    - compares bobinator ages
+    - returns the lower bobinator age
+
+__add__ (self, other)
+    - Overloaded method
+    - find the longer name
+    - concatenate the names together in upper case starting with the longer name
+    - order doesn't matter if names are same length
+    - add ages together
+    - return new bobinator object with new name and new age
+
+__sub__ (self, other)
+    - requires both bobinator objects
+    - overloaded method
+    - compare length of bobinator names
+    - concatinate names in lower case starting with the shorter name
+    - substract ages from one another, use the absolute value
+    - return new bobinator object with new name and new age
+
+__mul__ (self, factor)
+    - Overloaded method
+    - requires one bobinator object
+    - uses multiplication to concatenate (last letter)*(factor-1)
+    - multiplies age by factor
+    - returns new bobinator object with new name and new age
+
+__truediv__
+    - overloaded method
+    - requires both bobinator objects
+    - finds longer name
+    - alternates through each letter of each name starting with the longer name to make new name
+    - when shorter name runs out of letters, the rest of the longer name is concatenated onto new name
+    - capitalize every other letter in the new name
+    - get average of ages
+    - create new bobinator object with new name and new age
+
+__mod__
+    - overloaded method
+    - requires both bobinator objects
+    - calls getMid (a method to find the middle of each name) see getMid
+    - capitalize first and last letter of new name
+    - calculates average age of bobinators
+    - create new bobinator object with new name and new age
+
+gedMid
+    - requires one bobinator object
+    - starting edge length is 1 for all bobinator objects
+    - while the length of the name - 2 times the edge is greater than or equal to
+      the edge + 1 then we add 1 to the edge
+    - from the edge index - 1 to the length of the name + edge + 1 we concatenate
+      each letter to produce the middle name
+    - return the middle name
+
+backbobslice
+    - requires one bobinator object
+    - use slice operator to iterate backwards through name string and age string
+    - return newname and new age bobinator object
+
+backBobManual
+    - requires one bobinator object
+    - use for loop to do the same as previous
+
+include the following methods
+__lt__
+__str__
+__repr__
+
+
+---------------------
+Testing
+---------------------
+Welcome to the Bobinator
+Enter the first name: David
+Enter the first age: 24
+Enter the second name: Olivia
+Enter the second age: 25
+
+Expected Output
+First Bob         : David(24)
+Big Bob           : OLIVIADAVID(49)
+Little Bob        : davidolivia(1)
+Bob Factor        : with 5 Daviddddd(120), Oliviaaaaa(125)
+Mix Bobs          : OdLaIvViIdA(24.5)
+Middle Bob        : AvilivI(24.5)
+Back Bob Sliced   : Back Bob Slice one is divaD(42)
+                    Back Bob Slice two is aivilO(52)
+Back Bob Manual   : Back Bob Slice one is divaD(42)
+                    Back Bob Slice two is aivilO(52)
+
+
+Output:
+First Bob         : David(24)
+Big Bob           : OLIVIADAVID(49)
+Little Bob        : davidolivia(1)
+Bob Factor        : with 5 Daviddddd(120), Oliviaaaaa(125)
+Mix Bobs          : OdLaIvViIdA(24.5)
+Middle Bob        : AvilivI(24.5)
+Back Bob Sliced   : Back Bob Slice one is divaD(42)
+                    Back Bob Slice two is aivilO(52)
+Back Bob Manual   : Back Bob Slice one is divaD(42)
+                    Back Bob Slice two is aivilO(52)

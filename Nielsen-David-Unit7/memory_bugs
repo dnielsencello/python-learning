@@ -1,0 +1,18 @@
+# David Nielsen
+# CS1400 - I01
+# Unit 7 memorybugs
+
+1. a flipped card is not appended to the selectedcards list when it is selected
+2. When the a user tries to flip a card that is already flipped, the card is flipped
+   and appended
+3. Points are given to the wrong player
+4. true division / needs to change to //
+5. the while loop doesn't continue
+6. Player value is printed out improperly change str(playerTurn) to str(playerTurn + 1)
+7. while loop doesn't continue if not winner
+8. Loop needs to re-execute if no one has won and needs to start at player 1
+9. Tied player names are value of i not i + 1
+
+changed to a while loop the exits when the number of flipped cards is 2
+
+#BUG added this line of code to append to selected cards

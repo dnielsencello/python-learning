@@ -1,0 +1,24 @@
+System Design 1
+
+makeNumberPyramid function
+1. Create formal parameter for the number of rows from the caller of the function
+2. Create a string variable that will be returned. Start as an empty string.
+3. Create a loop that creates a string for the bottom row and use the len() function to calculate the length
+5. Create a loop from 0 to the number of rows (including the number of rows value)
+     a. Create a string variable for the row of text
+     b. Create a loop from 0 to the current row number
+          i. Create a conditional to concatenate a space to the text if it's not the first character of the row
+          ii. Concatenate the row number to the string
+     c. Add the row of text string to the message variable centered at the length of the bottom row.
+        Make sure to add a newline at the end
+5. Return the string message
+
+
+main function
+1. Get input from the user for the number of rows to print
+2. Call makeNumberPyramid using the value from the user and save the return
+3. Print the return value
+
+
+program start - Note: You do not need to include this in your future designs as this is implied.
+1. Call main function

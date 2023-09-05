@@ -1,0 +1,23 @@
+Plan4
+
+Elephants
+
+# 1. Import statements
+# 2. the program will ultimately ask the user if they would like to
+   # to continue, therefore it will be in a while loop
+# 3. we will check to see what stall each elephant will enter each night
+# for loop from 1 to 10000
+# elephant one will enter a stall
+# elephant two will enter a stall
+# zookeeper will check a stall
+# Nested if statement
+    # if the zookeeper sees elephant1 or elephant2 in a stall we will count
+    # add it to a total
+           # if the zookeeper sees that both elephants are in the stall we
+           # will add it to a seperate total.
+
+# 4. doing math
+    #occurance1 = elephantInStall/100000
+    #occurance2 = bothElephatsInStall/elephantInStall
+# Print of the results
+# Prompt user if they would like to continue
